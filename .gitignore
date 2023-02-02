@@ -1,5 +1,6 @@
 # gitignore for C++
 # Compiled Object files
+*.vs
 *.slo
 *.lo
 *.o

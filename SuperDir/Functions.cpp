@@ -1,6 +1,4 @@
 #include <iostream>
-
-#include <filesystem>
+#include "IFileInfo.h"
+#include<fileapi.h>
 using namespace std;
-
-class IFileInfo** FindFiles(const char* aFolder);

@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,10 +129,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileInfo_Base.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="SuperDir.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FileInfo_Base.h" />
+    <ClInclude Include="FileInfo_Binary.h" />
+    <ClInclude Include="FileInfo_EXE.h" />
+    <ClInclude Include="FileInfo_H.h" />
+    <ClInclude Include="FileInfo_Other.h" />
+    <ClInclude Include="FileInfo_Text.h" />
     <ClInclude Include="IFileInfo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

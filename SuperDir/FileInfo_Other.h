@@ -10,10 +10,10 @@ public:
 private:
 };
 
-FileInfo_Other::FileInfo_Other()
+/*FileInfo_Other::FileInfo_Other()
 {
 }
 
 FileInfo_Other::~FileInfo_Other()
 {
-}
+}*/

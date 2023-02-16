@@ -1,4 +1,5 @@
 #pragma once
+#include "FIleInfo_Text.h"
 class FileInfo_H
 {
 	virtual void Displayinformation();
@@ -6,14 +7,12 @@ class FileInfo_H
 public:
 	FileInfo_H();
 	~FileInfo_H();
-
-private:
 };
 
-FileInfo_H::FileInfo_H()
+/*FileInfo_H::FileInfo_H()
 {
 }
 
 FileInfo_H::~FileInfo_H()
 {
-}
+}*/

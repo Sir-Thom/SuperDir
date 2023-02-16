@@ -1,19 +1,17 @@
 #pragma once
 #include"FileInfo_Base.h"
-class FileInfo_Text
+class FileInfo_Text :FileInfo_Base
 {
-	virtual void RetrieveInformation();
 public:
+	virtual void RetrieveInformation();
 	FileInfo_Text();
 	~FileInfo_Text();
-
-private:
 };
 
-FileInfo_Text::FileInfo_Text()
+/*FileInfo_Text::FileInfo_Text()
 {
 }
 
 FileInfo_Text::~FileInfo_Text()
 {
-}
+}*/

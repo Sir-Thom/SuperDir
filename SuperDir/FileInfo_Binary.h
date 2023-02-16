@@ -1,19 +1,12 @@
-#pragma once
-#include"FileInfo_Base.h"
-class FileInfo_Binary
+#include "IFileInfo.h"
+#include <fstream>
+#include "FileInfo_Base.h"
+class FileInfo_Binary :FileInfo_Base
 {
-	virtual void RetrieveInformation();
 public:
-	FileInfo_Binary();
-	~FileInfo_Binary();
+	FileInfo_Binary(const char* aFolder, const char* aFileName);
+	virtual ~FileInfo_Binary();
 
-private:
+	virtual void RetrieveInformation();
+	virtual void PrintInformation();
 };
-
-FileInfo_Binary::FileInfo_Binary()
-{
-}
-
-FileInfo_Binary::~FileInfo_Binary()
-{
-}

@@ -4,11 +4,12 @@
 #include <iostream>
 #include "IFileInfo.h"
 #include <fileapi.h>
-int main()
+#include "Functions.cpp"
+int main(int argc, char* argv)
 {
-	std::cout << "Hello World!\n";
-	IFileInfo* i = new IFileInfo;
+	FindFiles(argv);
 }
+
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 

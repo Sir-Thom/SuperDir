@@ -1,16 +1,16 @@
 #pragma once
-class FileInfo_Base
+#include "IFileInfo.h"
+class FileInfo_Base :IFileInfo
 {
-	char mFolder[512];
-	char mFile[256];
-	virtual void Init(const char* aFolder, const char* aFile);
-public:
 	FileInfo_Base();
 	~FileInfo_Base();
+public:
+	virtual void Init(const char* aFolder, const char* aFile);
+	char mFolder[512];
+	char mFile[256];
 
 private:
 };
-
 FileInfo_Base::FileInfo_Base()
 {
 }
